@@ -7,18 +7,18 @@ function sortCarByYearAscendingly(cars) {
   const result = [...cars];
 
   // Tulis code-mu disini
-  for(i=0;i<result.length;i++){
-    let flag=result.length-i-1
+  for(i=0;i<cars.length;i++){
+    let flag=cars.length-i-1
     for(j=0;j<flag;j++){
-      let x=result[j]
-      let y=result[j+1]
-      if(result[j].year>result[j+1].year){
-        result[j]=y
-        result[j+1]=x
+      let x=cars[j]
+      let y=cars[j+1]
+      if(cars[j].year>cars[j+1].year){
+        cars[j]=y
+        cars[j+1]=x
       }
     }
   }
 
   // Rubah code ini dengan array hasil sorting secara ascending
-  return result;
+  return cars;
 }
